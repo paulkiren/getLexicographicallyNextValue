@@ -43,11 +43,19 @@ function getLexicographicallyNextValue(arr) {
 
 }
 
+
+function click_me() {
+    // as of now no validations added. 
+    let test = document.getElementById('inputValue').value;
+    let out = getLexicographicallyNextValue(test.split(','));
+    document.getElementById('outputValue').innerHTML = out.join(',');
+}
+
 //  test
 
-console.log(getLexicographicallyNextValue([1, 2, 3])); // 1,3,2
-console.log(getLexicographicallyNextValue([3, 2, 1])); // 1,2,3
-console.log(getLexicographicallyNextValue([1, 1, 5])); // 1,5,1
+// console.log(getLexicographicallyNextValue([1, 2, 3])); // 1,3,2
+// console.log(getLexicographicallyNextValue([3, 2, 1])); // 1,2,3
+// console.log(getLexicographicallyNextValue([1, 1, 5])); // 1,5,1
 
 
 
